@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="./logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">what's new</a></li>
+                <li><a href="#">newslleter</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>That's What<br><span>I Like</span><h2></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate praesentium amet fugit, nihil sunt voluptatem temporibus neque, architecto sed numquam iste illum omnis magnam voluptates, aspernatur vitae repudiandae doloremque fuga!</p>
+                <a href="#"> View All Product</a>
+            </div>
+        </div>
+        <div class="imgbox">
+            <img src="./pepsi001.png" class="pepsi"> 
+        </div>
+        <ul class="thumb">
+            <li><img src="./pepsi001.png" onclick="imgslider('./pepsi001.png');changeBgcolor('#0062be')"></li>
+            <li><img src="./pepsi002.png" onclick="imgslider('./pepsi002.png');changeBgcolor('#e60c2c')"></li>
+            <li><img src="./pepsi003.png" onclick="imgslider('./pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./facebook.png"></a></li>
+            <li><a href="#"><img src="./twitter.png"></a></li>
+            <li><a href="#"><img src="./instagram.png"></a></li>
+        </ul>
+        <script type="text/javascript">
+            function imgslider(anything){
+              document.querySelector('.pepsi').src = anything;
+            }
+            function changeBgcolor(color){
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+            
+        
+        
+        </script>
+</body>
+</html>
